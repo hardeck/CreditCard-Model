@@ -17,4 +17,7 @@ public class CreditCard {
     public boolean isBlocked(){
         return isblock;
     }
+    public void withdraw(double money){
+        this.limit=limit-money;
+    }
 }

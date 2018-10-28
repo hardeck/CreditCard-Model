@@ -18,4 +18,13 @@ public class CreditCardTest {
         
         Assert.assertTrue(card.isBlocked());
     }
+    
+    @Test
+    public void allowWithdrawMoney() {
+        CreditCard card = new CreditCard();
+        card.assignLimit(2000);
+        card.withdraw(200);
+        
+        Assert.assertEquals(1800, card.getBallance());
+    }
 }
