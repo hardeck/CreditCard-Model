@@ -10,4 +10,12 @@ public class CreditCardTest {
         card.assignLimit(2000);
         Assert.assertTrue(card.getBallance() == 2000);
     }
+    
+    @Test
+    public void allowBlockCard() {
+        CreditCard card = new CreditCard();
+        card.block();
+        
+        Assert.assertTrue(card.isBlocked());
+    }
 }
