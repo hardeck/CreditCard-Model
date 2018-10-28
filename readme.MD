@@ -6,4 +6,3 @@ Business requirements
 	-can't withdraw when can't afford
 	-can't withdraw when card is blocked
 - repay
-
